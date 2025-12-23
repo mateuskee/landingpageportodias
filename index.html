@@ -35,7 +35,7 @@
                         <a href="#inicio" class="nav__link">Início</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#cotacao" class="nav__link">Cotação</a>
+                        <a href="#inicio" class="nav__link">Cotação</a>
                     </li>
                     <li class="nav__item">
                         <a href="#sobre" class="nav__link">Sobre Nós</a>
@@ -66,9 +66,9 @@
         <div class="hero__wrapper container">
             <div class="hero__text">
                 <h1 class="hero__title animate-fade-up">
-                    O Plano da <span class="highlight">Sua Vida</span>
+                    O Plano da Sua Vida
                 </h1>
-                <p class="hero__subtitle animate-fade-up delay-1">
+                <p class="hero__subtitle hero__subtitle--desktop animate-fade-up delay-1">
                     Cuidado com a saúde e o bem-estar do cliente é a nossa essência
                 </p>
             </div>
@@ -157,11 +157,6 @@
                     </form>
                 </div>
             </div>
-        </div>
-        <div class="hero__scroll">
-            <a href="#cotacao" class="scroll-indicator">
-                <i class="fas fa-chevron-down"></i>
-            </a>
         </div>
     </section>
 
@@ -252,28 +247,48 @@
             </div>
 
             <div class="plans__types">
-                <div class="plan-type animate-scale">
+                <div class="plan-type plan-type--expandable animate-scale" onclick="this.classList.toggle('expanded')">
                     <div class="plan-type__icon">
                         <i class="fas fa-percentage"></i>
                     </div>
                     <h4>Coparticipativo Total</h4>
-                    <p>Mensalidade reduzida com participação nos procedimentos</p>
+                    <div class="plan-type__toggle">
+                        <span>Ver mais</span> <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="plan-type__details">
+                        <p>O beneficiário paga uma taxa sobre todos os procedimentos realizados, incluindo atendimentos
+                            eletivos, internações e cirurgias.</p>
+                    </div>
                 </div>
 
-                <div class="plan-type animate-scale delay-1">
+                <div class="plan-type plan-type--expandable animate-scale delay-1"
+                    onclick="this.classList.toggle('expanded')">
                     <div class="plan-type__icon">
                         <i class="fas fa-divide"></i>
                     </div>
                     <h4>Coparticipativo Parcial</h4>
-                    <p>Equilíbrio entre mensalidade e coparticipação</p>
+                    <div class="plan-type__toggle">
+                        <span>Ver mais</span> <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="plan-type__details">
+                        <p>A taxa é cobrada apenas em caso de terapias. Outros serviços como consultas de urgência e
+                            emergência, exames, internações e cirurgias são isentos dessa taxa.</p>
+                    </div>
                 </div>
 
-                <div class="plan-type animate-scale delay-2">
+                <div class="plan-type plan-type--expandable animate-scale delay-2"
+                    onclick="this.classList.toggle('expanded')">
                     <div class="plan-type__icon">
                         <i class="fas fa-infinity"></i>
                     </div>
                     <h4>Sem Coparticipação</h4>
-                    <p>Cobertura completa sem custos adicionais</p>
+                    <div class="plan-type__toggle">
+                        <span>Ver mais</span> <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="plan-type__details">
+                        <p>O usuário não paga nenhum tipo de taxa extra por qualquer procedimento realizado pelo plano.
+                        </p>
+                    </div>
                 </div>
             </div>
 

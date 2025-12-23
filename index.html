@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Hospital Porto Dias - Cuidado com a saúde e o bem-estar do cliente é a nossa essência. Planos de saúde com qualidade e atendimento personalizado.">
+    <meta name="keywords" content="plano de saúde, hospital porto dias, saúde, belém, pará, prime planos">
+    <title>Hospital Porto Dias | O Plano da Sua Vida</title>
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#inicio" class="nav__logo">
+                <img src="assets/logoportodias.png" alt="Hospital Porto Dias" class="logo-main">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#inicio" class="nav__link">Início</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#cotacao" class="nav__link">Cotação</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#sobre" class="nav__link">Sobre Nós</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#planos" class="nav__link">Planos</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <a href="#" class="nav__partner">
+                <img src="assets/logoprime.png" alt="Prime Planos" class="logo-partner">
+            </a>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero__overlay"></div>
+        <div class="hero__content container">
+            <h1 class="hero__title animate-fade-up">
+                O Plano da <span class="highlight">Sua Vida</span>
+            </h1>
+            <p class="hero__subtitle animate-fade-up delay-1">
+                Cuidado com a saúde e o bem-estar do cliente é a nossa essência
+            </p>
+        </div>
+        <div class="hero__scroll">
+            <a href="#cotacao" class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section" id="cotacao">
+        <div class="container">
+            <div class="quote-section__wrapper">
+                <!-- Form -->
+                <div class="quote-form animate-slide-left">
+                    <div class="quote-form__header">
+                        <i class="fas fa-clipboard-list"></i>
+                        <h2>Solicite sua Cotação</h2>
+                        <p>Preencha os dados abaixo e entraremos em contato</p>
+                    </div>
+                    <form class="form" id="quote-form">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Nome Completo</label>
+                            <div class="form__input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="name" name="name" class="form__input"
+                                    placeholder="Digite seu nome" required>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <label for="phone" class="form__label">Telefone</label>
+                            <div class="form__input-wrapper">
+                                <i class="fas fa-phone"></i>
+                                <input type="tel" id="phone" name="phone" class="form__input"
+                                    placeholder="(00) 00000-0000" required>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <label for="email" class="form__label">E-mail</label>
+                            <div class="form__input-wrapper">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" class="form__input"
+                                    placeholder="seu@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="city" class="form__label">Cidade</label>
+                                <div class="form__input-wrapper">
+                                    <i class="fas fa-city"></i>
+                                    <input type="text" id="city" name="city" class="form__input"
+                                        placeholder="Sua cidade" required>
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <label for="state" class="form__label">Estado</label>
+                                <div class="form__input-wrapper">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <select id="state" name="state" class="form__input form__select" required>
+                                        <option value="">Selecione</option>
+                                        <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">
+                            <i class="fas fa-paper-plane"></i> Enviar Cotação
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Benefits -->
+                <div class="benefits animate-slide-right">
+                    <div class="section-header">
+                        <span class="section-tag">Por que escolher</span>
+                        <h2 class="section-title">Hospital Porto Dias</h2>
+                        <p class="benefits__subtitle">
+                            Escolher o Hospital Porto Dias é optar por uma das instituições de saúde mais completas e
+                            respeitadas da Região Norte do Brasil. Com quase 30 anos de história, o hospital se destaca
+                            como uma referência em alta complexidade, unindo tecnologia de ponta a um atendimento humano
+                            e seguro.
+                        </p>
+                    </div>
+                    <div class="benefits__carousel" id="benefits-carousel">
+                        <div class="benefit-card">
+                            <div class="benefit-card__icon">
+                                <i class="fas fa-hospital"></i>
+                            </div>
+                            <div class="benefit-card__content">
+                                <h3>Infraestrutura Completa</h3>
+                                <p>Hospitais modernos com tecnologia de ponta e profissionais qualificados.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-card__icon">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div class="benefit-card__content">
+                                <h3>Rede Credenciada Ampla</h3>
+                                <p>Os melhores profissionais da área de saúde à sua disposição.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-card__icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div class="benefit-card__content">
+                                <h3>Atendimento Humanizado</h3>
+                                <p>Prezamos pela qualidade, agilidade e segurança no atendimento.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-card__icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="benefit-card__content">
+                                <h3>Planos Personalizados</h3>
+                                <p>Diversas opções de planos para atender suas necessidades.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-card__icon">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <div class="benefit-card__content">
+                                <h3>Alta Complexidade</h3>
+                                <p>Referência regional em procedimentos de alta complexidade e cirurgias especializadas.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-card__icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="benefit-card__content">
+                                <h3>Pronto Atendimento 24h</h3>
+                                <p>Atendimento de urgência e emergência disponível 24 horas por dia, todos os dias.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-card__icon">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <div class="benefit-card__content">
+                                <h3>Especialidades Médicas</h3>
+                                <p>Mais de 30 especialidades médicas disponíveis para atender todas as suas necessidades
+                                    de saúde.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Carousel -->
+                    <div class="benefits__carousel" id="benefits-carousel-2">
+                        <div class="benefit-card">
+                            <div class="benefit-card__icon">
+                                <i class="fas fa-x-ray"></i>
+                            </div>
+                            <div class="benefit-card__content">
+                                <h3>Diagnóstico por Imagem</h3>
+                                <p>Equipamentos de última geração para exames de ressonância, tomografia e
+                                    ultrassonografia.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-card__icon">
+                                <i class="fas fa-ambulance"></i>
+                            </div>
+                            <div class="benefit-card__content">
+                                <h3>UTI Completa</h3>
+                                <p>Unidade de Terapia Intensiva com estrutura moderna e equipe médica especializada 24h.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-card__icon">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                            <div class="benefit-card__content">
+                                <h3>Cirurgias Minimamente Invasivas</h3>
+                                <p>Técnicas avançadas que proporcionam recuperação mais rápida e menos trauma ao
+                                    paciente.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="benefit-card__icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <div class="benefit-card__content">
+                                <h3>Laboratório Próprio</h3>
+                                <p>Resultados de exames rápidos e precisos com laboratório integrado ao hospital.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="sobre">
+        <!-- Curved Stripes Decoration -->
+        <div class="about__curves">
+            <svg viewBox="0 0 1200 200" preserveAspectRatio="none">
+                <path d="M0,100 Q300,180 600,100 T1200,100" fill="none" stroke="#C8393D" stroke-width="3"
+                    opacity="0.3" />
+                <path d="M0,120 Q300,200 600,120 T1200,120" fill="none" stroke="#C8393D" stroke-width="3"
+                    opacity="0.2" />
+                <path d="M0,140 Q300,220 600,140 T1200,140" fill="none" stroke="#A62E32" stroke-width="3"
+                    opacity="0.15" />
+            </svg>
+        </div>
+        <div class="container">
+            <div class="section-header section-header--center">
+                <span class="section-tag">Conheça</span>
+                <h2 class="section-title">Nossa Empresa</h2>
+                <p class="section-description">
+                    Cuidado com a saúde e o bem-estar do cliente é a essência do Porto Dias Saúde,
+                    uma empresa comprometida com a qualidade na prestação dos serviços e o atendimento personalizado.
+                </p>
+            </div>
+
+            <div class="about__intro animate-fade-up">
+                <p>
+                    O nosso objetivo é garantir o seu bem-estar. Para tanto, disponibilizamos a você uma ampla rede
+                    credenciada,
+                    com os melhores profissionais da área de saúde, sempre prezando pela qualidade, agilidade e
+                    segurança.
+                </p>
+            </div>
+
+            <div class="about__cards">
+                <div class="about-card animate-fade-up">
+                    <div class="about-card__icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="about-card__title">Missão</h3>
+                    <p class="about-card__text">
+                        Garantir a uma parte significativa da sociedade o acesso à medicina avançada,
+                        alta tecnologia e qualidade.
+                    </p>
+                </div>
+
+                <div class="about-card animate-fade-up delay-1">
+                    <div class="about-card__icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="about-card__title">Visão</h3>
+                    <p class="about-card__text">
+                        Ser a melhor e a maior empresa na promoção da saúde.
+                    </p>
+                </div>
+
+                <div class="about-card animate-fade-up delay-2">
+                    <div class="about-card__icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="about-card__title">Valores</h3>
+                    <p class="about-card__text">
+                        Ética nas relações; melhoria contínua; transparência nas ações;
+                        satisfação dos clientes, fornecedores, colaboradores e da comunidade.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section class="plans" id="planos">
+        <div class="container">
+            <div class="section-header section-header--center">
+                <span class="section-tag">Nossos</span>
+                <h2 class="section-title">Planos de Saúde</h2>
+                <p class="section-description">
+                    Oferecemos diversas modalidades de planos para atender às suas necessidades e de sua empresa.
+                </p>
+            </div>
+
+            <div class="plans__categories">
+                <div class="plan-category animate-fade-up">
+                    <div class="plan-category__header">
+                        <i class="fas fa-building"></i>
+                        <h3>Coletivo Empresarial</h3>
+                    </div>
+                    <p class="plan-category__description">
+                        Ideal para empresas que desejam oferecer benefícios de saúde aos seus colaboradores.
+                    </p>
+                    <ul class="plan-category__list">
+                        <li><i class="fas fa-check"></i> Básico Coletivo Empresarial</li>
+                        <li><i class="fas fa-check"></i> Plus Coletivo Empresarial</li>
+                        <li><i class="fas fa-check"></i> Referência Coletivo Empresarial</li>
+                    </ul>
+                </div>
+
+                <div class="plan-category animate-fade-up delay-1">
+                    <div class="plan-category__header">
+                        <i class="fas fa-users"></i>
+                        <h3>Coletivo por Adesão</h3>
+                    </div>
+                    <p class="plan-category__description">
+                        Para profissionais liberais e membros de entidades de classe associativas.
+                    </p>
+                    <ul class="plan-category__list">
+                        <li><i class="fas fa-check"></i> Básico Coletivo Adesão</li>
+                        <li><i class="fas fa-check"></i> Plus Coletivo Adesão</li>
+                        <li><i class="fas fa-check"></i> Referência Coletivo Adesão</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="plans__types">
+                <div class="plan-type animate-scale">
+                    <div class="plan-type__icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h4>Coparticipativo Total</h4>
+                    <p>Mensalidade reduzida com participação nos procedimentos</p>
+                </div>
+
+                <div class="plan-type animate-scale delay-1">
+                    <div class="plan-type__icon">
+                        <i class="fas fa-divide"></i>
+                    </div>
+                    <h4>Coparticipativo Parcial</h4>
+                    <p>Equilíbrio entre mensalidade e coparticipação</p>
+                </div>
+
+                <div class="plan-type animate-scale delay-2">
+                    <div class="plan-type__icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h4>Sem Coparticipação</h4>
+                    <p>Cobertura completa sem custos adicionais</p>
+                </div>
+            </div>
+
+            <div class="plans__cta">
+                <a href="#cotacao" class="btn btn--primary btn--large">
+                    <i class="fas fa-file-signature"></i> Solicitar Cotação Agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="galeria">
+        <div class="container">
+            <div class="section-header section-header--center">
+                <span class="section-tag">Conheça</span>
+                <h2 class="section-title">Nossa Estrutura</h2>
+                <p class="section-description">
+                    Infraestrutura moderna e completa para cuidar da sua saúde.
+                </p>
+            </div>
+
+            <div class="gallery__grid">
+                <div class="gallery__item animate-fade-up">
+                    <img src="assets/hospital1.jpg" alt="Hospital Pediátrico">
+                    <div class="gallery__caption">
+                        <h3>Hospital Pediátrico</h3>
+                    </div>
+                </div>
+
+                <div class="gallery__item animate-fade-up delay-1">
+                    <img src="assets/hospital2.jpg" alt="Hospital do Câncer">
+                    <div class="gallery__caption">
+                        <h3>Hospital do Câncer</h3>
+                    </div>
+                </div>
+
+                <div class="gallery__item animate-fade-up delay-2">
+                    <img src="assets/hospital3.jpg" alt="Porto Dias Oftalmologia">
+                    <div class="gallery__caption">
+                        <h3>Porto Dias Oftalmologia</h3>
+                    </div>
+                </div>
+
+                <div class="gallery__item animate-fade-up delay-3">
+                    <img src="assets/hospital4.png" alt="Núcleo de Ortopedia e Traumatologia">
+                    <div class="gallery__caption">
+                        <h3>Núcleo de Ortopedia e Traumatologia</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contato">
+        <div class="container">
+            <div class="section-header section-header--center">
+                <span class="section-tag">Fale Conosco</span>
+                <h2 class="section-title">Contato</h2>
+                <p class="section-description">
+                    Entre em contato para tirar suas dúvidas ou fazer sua cotação.
+                </p>
+            </div>
+
+            <div class="contact__cards">
+                <a href="mailto:contato@primeplanos.com.br" class="contact-card animate-fade-up">
+                    <div class="contact-card__icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-mail</h3>
+                    <p>contato@primeplanos.com.br</p>
+                </a>
+
+                <a href="https://wa.me/5591991924200" target="_blank"
+                    class="contact-card contact-card--whatsapp animate-fade-up delay-1">
+                    <div class="contact-card__icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>(91) 99192-4200</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="rodape">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logos">
+                        <img src="assets/logoportodias.png" alt="Hospital Porto Dias" class="footer__logo">
+                        <img src="assets/logoprime.png" alt="Prime Planos" class="footer__logo">
+                    </div>
+                    <p class="footer__tagline">
+                        Cuidado com a saúde e o bem-estar do cliente é a nossa essência.
+                    </p>
+                </div>
+
+                <div class="footer__nav">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#cotacao">Cotação</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#planos">Planos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:contato@primeplanos.com.br">contato@primeplanos.com.br</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/5591991924200">(91) 99192-4200</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Prime Planos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5591991924200" target="_blank" class="whatsapp-float" aria-label="Contato por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Header scroll effect
+        const header = document.getElementById('header');
+
+        function scrollHeader() {
+            if (window.scrollY >= 50) {
+                header.classList.add('scroll-header');
+            } else {
+                header.classList.remove('scroll-header');
+            }
+        }
+        window.addEventListener('scroll', scrollHeader);
+
+        // Mobile menu
+        const navMenu = document.getElementById('nav-menu');
+        const navToggle = document.getElementById('nav-toggle');
+        const navClose = document.getElementById('nav-close');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.add('show-menu');
+            });
+        }
+
+        if (navClose) {
+            navClose.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+            });
+        }
+
+        // Close menu on link click
+        const navLinks = document.querySelectorAll('.nav__link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-fade-up, .animate-slide-left, .animate-slide-right, .animate-scale').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Phone mask
+        const phoneInput = document.getElementById('phone');
+        if (phoneInput) {
+            phoneInput.addEventListener('input', function (e) {
+                let value = e.target.value.replace(/\D/g, '');
+                if (value.length > 11) value = value.slice(0, 11);
+
+                if (value.length > 0) {
+                    value = '(' + value;
+                }
+                if (value.length > 3) {
+                    value = value.slice(0, 3) + ') ' + value.slice(3);
+                }
+                if (value.length > 10) {
+                    value = value.slice(0, 10) + '-' + value.slice(10);
+                }
+
+                e.target.value = value;
+            });
+        }
+
+        // Form submission
+        const quoteForm = document.getElementById('quote-form');
+        if (quoteForm) {
+            quoteForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                const formData = new FormData(quoteForm);
+                const data = Object.fromEntries(formData);
+
+                // Create WhatsApp message
+                const message = `Olá! Gostaria de solicitar uma cotação de plano de saúde.\n\n` +
+                    `*Nome:* ${data.name}\n` +
+                    `*Telefone:* ${data.phone}\n` +
+                    `*E-mail:* ${data.email}\n` +
+                    `*Cidade:* ${data.city}\n` +
+                    `*Estado:* ${data.state}`;
+
+                const whatsappUrl = `https://wa.me/5591991924200?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+            });
+        }
+
+        // Benefits Carousel Animation - Function to initialize any carousel
+        function initCarousel(carouselId) {
+            const carousel = document.getElementById(carouselId);
+            if (carousel) {
+                const cards = carousel.querySelectorAll('.benefit-card');
+                let currentIndex = 0;
+
+                // Set up cards for crossfade
+                cards.forEach((card, index) => {
+                    card.style.position = 'absolute';
+                    card.style.top = '0';
+                    card.style.left = '0';
+                    card.style.width = '100%';
+                    card.style.transition = 'opacity 0.5s ease';
+                    if (index !== 0) {
+                        card.style.opacity = '0';
+                    } else {
+                        card.style.opacity = '1';
+                    }
+                });
+
+                // Make container relative for absolute positioning
+                carousel.style.position = 'relative';
+                carousel.style.minHeight = '100px';
+
+                function showNextCard() {
+                    const currentCard = cards[currentIndex];
+                    const nextIndex = (currentIndex + 1) % cards.length;
+                    const nextCard = cards[nextIndex];
+
+                    // Crossfade - fade out current while fading in next simultaneously
+                    currentCard.style.opacity = '0';
+                    nextCard.style.opacity = '1';
+
+                    currentIndex = nextIndex;
+                }
+
+                // Start carousel - show each card for 3 seconds
+                setInterval(showNextCard, 3000);
+            }
+        }
+
+        // Initialize both carousels with slight offset
+        initCarousel('benefits-carousel');
+        setTimeout(() => initCarousel('benefits-carousel-2'), 1500);
+    </script>
+</body>
+
+</html>
+``

@@ -312,6 +312,96 @@ img {
     }
 }
 
+/* Hero with Form Layout */
+.hero--with-form {
+    padding: 120px 0 80px;
+}
+
+.hero__wrapper {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero__text {
+    color: var(--white);
+}
+
+.hero__text .hero__title {
+    text-align: left;
+}
+
+.hero__text .hero__subtitle {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.hero__form {
+    position: relative;
+    z-index: 2;
+}
+
+.quote-form--hero {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+}
+
+.quote-form--hero .quote-form__header i {
+    font-size: 2rem;
+}
+
+.quote-form--hero .quote-form__header h2 {
+    font-size: 1.5rem;
+}
+
+.quote-form--hero .quote-form__header p {
+    font-size: 0.9rem;
+}
+
+.quote-form--hero .form__group {
+    margin-bottom: 0.875rem;
+}
+
+.quote-form--hero .form__label {
+    font-size: 0.8rem;
+}
+
+.quote-form--hero .form__input {
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    font-size: 0.9rem;
+}
+
+.quote-form--hero .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* Benefits full width */
+.benefits--full {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.benefits--full .benefits__carousel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.benefits--full .benefit-card {
+    position: relative;
+    opacity: 1;
+}
+
+.quote-section--benefits-only {
+    padding: 4rem 0;
+}
+
 /* ==========================================
    SECTION HEADER
    ========================================== */
@@ -769,7 +859,6 @@ img {
    ========================================== */
 .gallery {
     padding: 6rem 0;
-    padding-top: 8rem;
     background: var(--light-gray);
 }
 
@@ -1143,18 +1232,87 @@ img {
     }
 
     .logo-main {
-        height: 65px;
+        height: 91px;
         filter: brightness(0) invert(1);
     }
 
     .logo-partner {
-        height: 60px;
+        height: 84px;
         filter: brightness(0) invert(1);
     }
 
     .scroll-header .logo-main,
     .scroll-header .logo-partner {
         filter: none;
+    }
+
+    /* Hero with form mobile */
+    .hero--with-form {
+        padding: 100px 0 60px;
+    }
+
+    .hero__wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .hero__text {
+        text-align: center;
+    }
+
+    .hero__text .hero__title,
+    .hero__text .hero__subtitle {
+        text-align: center;
+    }
+
+    .quote-form--hero {
+        padding: 1.25rem;
+    }
+
+    .quote-form--hero .quote-form__header {
+        margin-bottom: 1rem;
+    }
+
+    .quote-form--hero .quote-form__header i {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .quote-form--hero .quote-form__header h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .quote-form--hero .quote-form__header p {
+        font-size: 0.8rem;
+    }
+
+    .quote-form--hero .form__group {
+        margin-bottom: 0.625rem;
+    }
+
+    .quote-form--hero .form__label {
+        font-size: 0.75rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .quote-form--hero .form__input {
+        padding: 0.625rem 0.75rem 0.625rem 2.25rem;
+        font-size: 0.85rem;
+    }
+
+    .quote-form--hero .form__input-wrapper i {
+        font-size: 0.85rem;
+    }
+
+    .quote-form--hero .btn {
+        padding: 0.625rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .quote-form--hero .form__row {
+        grid-template-columns: 1fr 80px;
+        gap: 0.5rem;
     }
 
     /* Curved stripes on mobile - adjusted */
@@ -1247,13 +1405,13 @@ img {
         justify-content: center;
     }
 
-    /* WhatsApp */
+    /* WhatsApp - 15% larger */
     .whatsapp-float {
         bottom: 1.5rem;
         right: 1.5rem;
-        width: 55px;
-        height: 55px;
-        font-size: 1.5rem;
+        width: 63px;
+        height: 63px;
+        font-size: 1.75rem;
     }
 }
 

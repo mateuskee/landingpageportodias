@@ -60,34 +60,25 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="inicio">
+    <!-- Hero Section with Form -->
+    <section class="hero hero--with-form" id="inicio">
         <div class="hero__overlay"></div>
-        <div class="hero__content container">
-            <h1 class="hero__title animate-fade-up">
-                O Plano da <span class="highlight">Sua Vida</span>
-            </h1>
-            <p class="hero__subtitle animate-fade-up delay-1">
-                Cuidado com a saúde e o bem-estar do cliente é a nossa essência
-            </p>
-        </div>
-        <div class="hero__scroll">
-            <a href="#cotacao" class="scroll-indicator">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>
-    </section>
+        <div class="hero__wrapper container">
+            <div class="hero__text">
+                <h1 class="hero__title animate-fade-up">
+                    O Plano da <span class="highlight">Sua Vida</span>
+                </h1>
+                <p class="hero__subtitle animate-fade-up delay-1">
+                    Cuidado com a saúde e o bem-estar do cliente é a nossa essência
+                </p>
+            </div>
 
-    <!-- Quote Section -->
-    <section class="quote-section" id="cotacao">
-        <div class="container">
-            <div class="quote-section__wrapper">
-                <!-- Form -->
-                <div class="quote-form animate-slide-left">
+            <div class="hero__form animate-slide-left">
+                <div class="quote-form quote-form--hero">
                     <div class="quote-form__header">
                         <i class="fas fa-clipboard-list"></i>
                         <h2>Solicite sua Cotação</h2>
-                        <p>Preencha os dados abaixo e entraremos em contato</p>
+                        <p>Preencha os dados abaixo</p>
                     </div>
                     <form class="form" id="quote-form">
                         <div class="form__group">
@@ -128,34 +119,34 @@
                                 <div class="form__input-wrapper">
                                     <i class="fas fa-map-marker-alt"></i>
                                     <select id="state" name="state" class="form__input form__select" required>
-                                        <option value="">Selecione</option>
-                                        <option value="AC">Acre</option>
-                                        <option value="AL">Alagoas</option>
-                                        <option value="AP">Amapá</option>
-                                        <option value="AM">Amazonas</option>
-                                        <option value="BA">Bahia</option>
-                                        <option value="CE">Ceará</option>
-                                        <option value="DF">Distrito Federal</option>
-                                        <option value="ES">Espírito Santo</option>
-                                        <option value="GO">Goiás</option>
-                                        <option value="MA">Maranhão</option>
-                                        <option value="MT">Mato Grosso</option>
-                                        <option value="MS">Mato Grosso do Sul</option>
-                                        <option value="MG">Minas Gerais</option>
-                                        <option value="PA">Pará</option>
-                                        <option value="PB">Paraíba</option>
-                                        <option value="PR">Paraná</option>
-                                        <option value="PE">Pernambuco</option>
-                                        <option value="PI">Piauí</option>
-                                        <option value="RJ">Rio de Janeiro</option>
-                                        <option value="RN">Rio Grande do Norte</option>
-                                        <option value="RS">Rio Grande do Sul</option>
-                                        <option value="RO">Rondônia</option>
-                                        <option value="RR">Roraima</option>
-                                        <option value="SC">Santa Catarina</option>
-                                        <option value="SP">São Paulo</option>
-                                        <option value="SE">Sergipe</option>
-                                        <option value="TO">Tocantins</option>
+                                        <option value="">UF</option>
+                                        <option value="AC">AC</option>
+                                        <option value="AL">AL</option>
+                                        <option value="AP">AP</option>
+                                        <option value="AM">AM</option>
+                                        <option value="BA">BA</option>
+                                        <option value="CE">CE</option>
+                                        <option value="DF">DF</option>
+                                        <option value="ES">ES</option>
+                                        <option value="GO">GO</option>
+                                        <option value="MA">MA</option>
+                                        <option value="MT">MT</option>
+                                        <option value="MS">MS</option>
+                                        <option value="MG">MG</option>
+                                        <option value="PA">PA</option>
+                                        <option value="PB">PB</option>
+                                        <option value="PR">PR</option>
+                                        <option value="PE">PE</option>
+                                        <option value="PI">PI</option>
+                                        <option value="RJ">RJ</option>
+                                        <option value="RN">RN</option>
+                                        <option value="RS">RS</option>
+                                        <option value="RO">RO</option>
+                                        <option value="RR">RR</option>
+                                        <option value="SC">SC</option>
+                                        <option value="SP">SP</option>
+                                        <option value="SE">SE</option>
+                                        <option value="TO">TO</option>
                                     </select>
                                 </div>
                             </div>
@@ -165,197 +156,53 @@
                         </button>
                     </form>
                 </div>
-
-                <!-- Benefits -->
-                <div class="benefits animate-slide-right">
-                    <div class="section-header">
-                        <span class="section-tag">Por que escolher</span>
-                        <h2 class="section-title">Hospital Porto Dias</h2>
-                        <p class="benefits__subtitle">
-                            Escolher o Hospital Porto Dias é optar por uma das instituições de saúde mais completas e
-                            respeitadas da Região Norte do Brasil. Com quase 30 anos de história, o hospital se destaca
-                            como uma referência em alta complexidade, unindo tecnologia de ponta a um atendimento humano
-                            e seguro.
-                        </p>
-                    </div>
-                    <div class="benefits__carousel" id="benefits-carousel">
-                        <div class="benefit-card">
-                            <div class="benefit-card__icon">
-                                <i class="fas fa-hospital"></i>
-                            </div>
-                            <div class="benefit-card__content">
-                                <h3>Infraestrutura Completa</h3>
-                                <p>Hospitais modernos com tecnologia de ponta e profissionais qualificados.</p>
-                            </div>
-                        </div>
-                        <div class="benefit-card">
-                            <div class="benefit-card__icon">
-                                <i class="fas fa-user-md"></i>
-                            </div>
-                            <div class="benefit-card__content">
-                                <h3>Rede Credenciada Ampla</h3>
-                                <p>Os melhores profissionais da área de saúde à sua disposição.</p>
-                            </div>
-                        </div>
-                        <div class="benefit-card">
-                            <div class="benefit-card__icon">
-                                <i class="fas fa-heartbeat"></i>
-                            </div>
-                            <div class="benefit-card__content">
-                                <h3>Atendimento Humanizado</h3>
-                                <p>Prezamos pela qualidade, agilidade e segurança no atendimento.</p>
-                            </div>
-                        </div>
-                        <div class="benefit-card">
-                            <div class="benefit-card__icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <div class="benefit-card__content">
-                                <h3>Planos Personalizados</h3>
-                                <p>Diversas opções de planos para atender suas necessidades.</p>
-                            </div>
-                        </div>
-                        <div class="benefit-card">
-                            <div class="benefit-card__icon">
-                                <i class="fas fa-microscope"></i>
-                            </div>
-                            <div class="benefit-card__content">
-                                <h3>Alta Complexidade</h3>
-                                <p>Referência regional em procedimentos de alta complexidade e cirurgias especializadas.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="benefit-card">
-                            <div class="benefit-card__icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="benefit-card__content">
-                                <h3>Pronto Atendimento 24h</h3>
-                                <p>Atendimento de urgência e emergência disponível 24 horas por dia, todos os dias.</p>
-                            </div>
-                        </div>
-                        <div class="benefit-card">
-                            <div class="benefit-card__icon">
-                                <i class="fas fa-stethoscope"></i>
-                            </div>
-                            <div class="benefit-card__content">
-                                <h3>Especialidades Médicas</h3>
-                                <p>Mais de 30 especialidades médicas disponíveis para atender todas as suas necessidades
-                                    de saúde.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Second Carousel -->
-                    <div class="benefits__carousel" id="benefits-carousel-2">
-                        <div class="benefit-card">
-                            <div class="benefit-card__icon">
-                                <i class="fas fa-x-ray"></i>
-                            </div>
-                            <div class="benefit-card__content">
-                                <h3>Diagnóstico por Imagem</h3>
-                                <p>Equipamentos de última geração para exames de ressonância, tomografia e
-                                    ultrassonografia.</p>
-                            </div>
-                        </div>
-                        <div class="benefit-card">
-                            <div class="benefit-card__icon">
-                                <i class="fas fa-ambulance"></i>
-                            </div>
-                            <div class="benefit-card__content">
-                                <h3>UTI Completa</h3>
-                                <p>Unidade de Terapia Intensiva com estrutura moderna e equipe médica especializada 24h.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="benefit-card">
-                            <div class="benefit-card__icon">
-                                <i class="fas fa-hand-holding-heart"></i>
-                            </div>
-                            <div class="benefit-card__content">
-                                <h3>Cirurgias Minimamente Invasivas</h3>
-                                <p>Técnicas avançadas que proporcionam recuperação mais rápida e menos trauma ao
-                                    paciente.</p>
-                            </div>
-                        </div>
-                        <div class="benefit-card">
-                            <div class="benefit-card__icon">
-                                <i class="fas fa-flask"></i>
-                            </div>
-                            <div class="benefit-card__content">
-                                <h3>Laboratório Próprio</h3>
-                                <p>Resultados de exames rápidos e precisos com laboratório integrado ao hospital.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+        </div>
+        <div class="hero__scroll">
+            <a href="#cotacao" class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="sobre">
-        <!-- Curved Stripes Decoration -->
-        <div class="about__curves">
-            <svg viewBox="0 0 1200 200" preserveAspectRatio="none">
-                <path d="M0,100 Q300,180 600,100 T1200,100" fill="none" stroke="#C8393D" stroke-width="3"
-                    opacity="0.3" />
-                <path d="M0,120 Q300,200 600,120 T1200,120" fill="none" stroke="#C8393D" stroke-width="3"
-                    opacity="0.2" />
-                <path d="M0,140 Q300,220 600,140 T1200,140" fill="none" stroke="#A62E32" stroke-width="3"
-                    opacity="0.15" />
-            </svg>
-        </div>
+    <!-- Gallery Section - Nossa Estrutura -->
+    <section class="gallery" id="galeria">
         <div class="container">
             <div class="section-header section-header--center">
                 <span class="section-tag">Conheça</span>
-                <h2 class="section-title">Nossa Empresa</h2>
+                <h2 class="section-title">Nossa Estrutura</h2>
                 <p class="section-description">
-                    Cuidado com a saúde e o bem-estar do cliente é a essência do Porto Dias Saúde,
-                    uma empresa comprometida com a qualidade na prestação dos serviços e o atendimento personalizado.
+                    Infraestrutura moderna e completa para cuidar da sua saúde.
                 </p>
             </div>
 
-            <div class="about__intro animate-fade-up">
-                <p>
-                    O nosso objetivo é garantir o seu bem-estar. Para tanto, disponibilizamos a você uma ampla rede
-                    credenciada,
-                    com os melhores profissionais da área de saúde, sempre prezando pela qualidade, agilidade e
-                    segurança.
-                </p>
-            </div>
-
-            <div class="about__cards">
-                <div class="about-card animate-fade-up">
-                    <div class="about-card__icon">
-                        <i class="fas fa-bullseye"></i>
+            <div class="gallery__grid">
+                <div class="gallery__item animate-fade-up">
+                    <img src="assets/hospital1.jpg" alt="Hospital Pediátrico">
+                    <div class="gallery__caption">
+                        <h3>Hospital Pediátrico</h3>
                     </div>
-                    <h3 class="about-card__title">Missão</h3>
-                    <p class="about-card__text">
-                        Garantir a uma parte significativa da sociedade o acesso à medicina avançada,
-                        alta tecnologia e qualidade.
-                    </p>
                 </div>
 
-                <div class="about-card animate-fade-up delay-1">
-                    <div class="about-card__icon">
-                        <i class="fas fa-eye"></i>
+                <div class="gallery__item animate-fade-up delay-1">
+                    <img src="assets/hospital2.jpg" alt="Hospital do Câncer">
+                    <div class="gallery__caption">
+                        <h3>Hospital do Câncer</h3>
                     </div>
-                    <h3 class="about-card__title">Visão</h3>
-                    <p class="about-card__text">
-                        Ser a melhor e a maior empresa na promoção da saúde.
-                    </p>
                 </div>
 
-                <div class="about-card animate-fade-up delay-2">
-                    <div class="about-card__icon">
-                        <i class="fas fa-gem"></i>
+                <div class="gallery__item animate-fade-up delay-2">
+                    <img src="assets/hospital3.jpg" alt="Porto Dias Oftalmologia">
+                    <div class="gallery__caption">
+                        <h3>Porto Dias Oftalmologia</h3>
                     </div>
-                    <h3 class="about-card__title">Valores</h3>
-                    <p class="about-card__text">
-                        Ética nas relações; melhoria contínua; transparência nas ações;
-                        satisfação dos clientes, fornecedores, colaboradores e da comunidade.
-                    </p>
+                </div>
+
+                <div class="gallery__item animate-fade-up delay-3">
+                    <img src="assets/hospital4.png" alt="Núcleo de Ortopedia e Traumatologia">
+                    <div class="gallery__caption">
+                        <h3>Núcleo de Ortopedia e Traumatologia</h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -431,51 +278,203 @@
             </div>
 
             <div class="plans__cta">
-                <a href="#cotacao" class="btn btn--primary btn--large">
+                <a href="#inicio" class="btn btn--primary btn--large">
                     <i class="fas fa-file-signature"></i> Solicitar Cotação Agora
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="gallery" id="galeria">
+    <!-- Quote Section - Por que escolher -->
+    <section class="quote-section quote-section--benefits-only" id="cotacao">
+        <div class="container">
+            <!-- Benefits -->
+            <div class="benefits benefits--full animate-fade-up">
+                <div class="section-header section-header--center">
+                    <span class="section-tag">Por que escolher</span>
+                    <h2 class="section-title">Hospital Porto Dias</h2>
+                    <p class="benefits__subtitle">
+                        Escolher o Hospital Porto Dias é optar por uma das instituições de saúde mais completas e
+                        respeitadas da Região Norte do Brasil. Com quase 30 anos de história, o hospital se destaca
+                        como uma referência em alta complexidade, unindo tecnologia de ponta a um atendimento humano
+                        e seguro.
+                    </p>
+                </div>
+                <div class="benefits__carousel" id="benefits-carousel">
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <div class="benefit-card__content">
+                            <h3>Infraestrutura Completa</h3>
+                            <p>Hospitais modernos com tecnologia de ponta e profissionais qualificados.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <div class="benefit-card__content">
+                            <h3>Rede Credenciada Ampla</h3>
+                            <p>Os melhores profissionais da área de saúde à sua disposição.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="benefit-card__content">
+                            <h3>Atendimento Humanizado</h3>
+                            <p>Prezamos pela qualidade, agilidade e segurança no atendimento.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="benefit-card__content">
+                            <h3>Planos Personalizados</h3>
+                            <p>Diversas opções de planos para atender suas necessidades.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <div class="benefit-card__content">
+                            <h3>Alta Complexidade</h3>
+                            <p>Referência regional em procedimentos de alta complexidade e cirurgias especializadas.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="benefit-card__content">
+                            <h3>Pronto Atendimento 24h</h3>
+                            <p>Atendimento de urgência e emergência disponível 24 horas por dia, todos os dias.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <div class="benefit-card__content">
+                            <h3>Especialidades Médicas</h3>
+                            <p>Mais de 30 especialidades médicas disponíveis para atender todas as suas necessidades de
+                                saúde.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Carousel -->
+                <div class="benefits__carousel" id="benefits-carousel-2">
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-x-ray"></i>
+                        </div>
+                        <div class="benefit-card__content">
+                            <h3>Diagnóstico por Imagem</h3>
+                            <p>Equipamentos de última geração para exames de ressonância, tomografia e ultrassonografia.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-ambulance"></i>
+                        </div>
+                        <div class="benefit-card__content">
+                            <h3>UTI Completa</h3>
+                            <p>Unidade de Terapia Intensiva com estrutura moderna e equipe médica especializada 24h.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <div class="benefit-card__content">
+                            <h3>Cirurgias Minimamente Invasivas</h3>
+                            <p>Técnicas avançadas que proporcionam recuperação mais rápida e menos trauma ao paciente.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <div class="benefit-card__content">
+                            <h3>Laboratório Próprio</h3>
+                            <p>Resultados de exames rápidos e precisos com laboratório integrado ao hospital.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="sobre">
+        <!-- Curved Stripes Decoration -->
+        <div class="about__curves">
+            <svg viewBox="0 0 1200 200" preserveAspectRatio="none">
+                <path d="M0,100 Q300,180 600,100 T1200,100" fill="none" stroke="#C8393D" stroke-width="3"
+                    opacity="0.3" />
+                <path d="M0,120 Q300,200 600,120 T1200,120" fill="none" stroke="#C8393D" stroke-width="3"
+                    opacity="0.2" />
+                <path d="M0,140 Q300,220 600,140 T1200,140" fill="none" stroke="#A62E32" stroke-width="3"
+                    opacity="0.15" />
+            </svg>
+        </div>
         <div class="container">
             <div class="section-header section-header--center">
                 <span class="section-tag">Conheça</span>
-                <h2 class="section-title">Nossa Estrutura</h2>
+                <h2 class="section-title">Nossa Empresa</h2>
                 <p class="section-description">
-                    Infraestrutura moderna e completa para cuidar da sua saúde.
+                    Cuidado com a saúde e o bem-estar do cliente é a essência do Porto Dias Saúde,
+                    uma empresa comprometida com a qualidade na prestação dos serviços e o atendimento personalizado.
                 </p>
             </div>
 
-            <div class="gallery__grid">
-                <div class="gallery__item animate-fade-up">
-                    <img src="assets/hospital1.jpg" alt="Hospital Pediátrico">
-                    <div class="gallery__caption">
-                        <h3>Hospital Pediátrico</h3>
+            <div class="about__intro animate-fade-up">
+                <p>
+                    O nosso objetivo é garantir o seu bem-estar. Para tanto, disponibilizamos a você uma ampla rede
+                    credenciada,
+                    com os melhores profissionais da área de saúde, sempre prezando pela qualidade, agilidade e
+                    segurança.
+                </p>
+            </div>
+
+            <div class="about__cards">
+                <div class="about-card animate-fade-up">
+                    <div class="about-card__icon">
+                        <i class="fas fa-bullseye"></i>
                     </div>
+                    <h3 class="about-card__title">Missão</h3>
+                    <p class="about-card__text">
+                        Garantir a uma parte significativa da sociedade o acesso à medicina avançada,
+                        alta tecnologia e qualidade.
+                    </p>
                 </div>
 
-                <div class="gallery__item animate-fade-up delay-1">
-                    <img src="assets/hospital2.jpg" alt="Hospital do Câncer">
-                    <div class="gallery__caption">
-                        <h3>Hospital do Câncer</h3>
+                <div class="about-card animate-fade-up delay-1">
+                    <div class="about-card__icon">
+                        <i class="fas fa-eye"></i>
                     </div>
+                    <h3 class="about-card__title">Visão</h3>
+                    <p class="about-card__text">
+                        Ser a melhor e a maior empresa na promoção da saúde.
+                    </p>
                 </div>
 
-                <div class="gallery__item animate-fade-up delay-2">
-                    <img src="assets/hospital3.jpg" alt="Porto Dias Oftalmologia">
-                    <div class="gallery__caption">
-                        <h3>Porto Dias Oftalmologia</h3>
+                <div class="about-card animate-fade-up delay-2">
+                    <div class="about-card__icon">
+                        <i class="fas fa-gem"></i>
                     </div>
-                </div>
-
-                <div class="gallery__item animate-fade-up delay-3">
-                    <img src="assets/hospital4.png" alt="Núcleo de Ortopedia e Traumatologia">
-                    <div class="gallery__caption">
-                        <h3>Núcleo de Ortopedia e Traumatologia</h3>
-                    </div>
+                    <h3 class="about-card__title">Valores</h3>
+                    <p class="about-card__text">
+                        Ética nas relações; melhoria contínua; transparência nas ações;
+                        satisfação dos clientes, fornecedores, colaboradores e da comunidade.
+                    </p>
                 </div>
             </div>
         </div>

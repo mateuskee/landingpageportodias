@@ -218,6 +218,23 @@ img {
     font-size: 1.1rem;
 }
 
+/* Pulse Animation */
+.btn--pulse {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+}
+
 /* ==========================================
    HERO SECTION
    ========================================== */
@@ -893,10 +910,24 @@ img {
 .plans__cta .btn--primary {
     background: var(--white);
     color: var(--primary-color);
+    animation: pulseScale 1.5s ease-in-out infinite;
+}
+
+@keyframes pulseScale {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
 }
 
 .plans__cta .btn--primary:hover {
     background: var(--light-gray);
+    animation: none;
 }
 
 /* ==========================================
